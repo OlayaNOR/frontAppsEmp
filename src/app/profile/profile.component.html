@@ -1,0 +1,50 @@
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="header">
+    <img src="assets/imgs/profile.png"alt="Logo" class="logo">
+    <h1>MY INFO</h1>
+    <div class="button-container">
+        <button type="submit" (click)="onLogOut()">LOG OUT</button>
+    </div>
+  </div>
+  <form class="form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="owner.email" name="email" placeholder="Email" required />
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="owner.name" name="name" placeholder="Name" required />
+      </div>
+    </div>
+
+    <div class="form-row"> 
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" [(ngModel)]="owner.phone" name="phone" placeholder="Phone" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="text" id="password" [(ngModel)]="owner.password" name="password" placeholder="Password" required />
+      </div>
+    </div>
+    
+    <br>
+    <div class="buttons">
+      <div class="button-container">
+        <button type="submit" (click)="onUpdateOwner()">UPDATE INFO</button>
+      </div>
+      <div class="button-container">
+        <button type="submit" (click)="onClickOwners()">GET ALL OWNERS</button>
+      </div>
+      <div class="button-container">
+        <button style="background-color: red;" type="submit" (click)="onDeleteOwner(owner.id)">DELETE MY ACCOUNT</button>
+      </div>
+    </div>
+    
+  </form>
+</div>

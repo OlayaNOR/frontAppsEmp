@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="header">
+    <img src="assets/imgs/logopc.png"alt="Logo" class="logo">
+    <h1>OWNERS REGISTERED</h1>
+    <div class="button-container">
+        <button type="submit" (click)="onLogOut()">LOG OUT</button>
+      </div>
+  </div>
+
+  <div class="table">
+    <table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Teléfono</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let owner of owners">
+        <td>{{ owner.id }}</td>
+        <td>{{ owner.name }}</td>
+        <td>{{ owner.email }}</td>
+        <td>{{ owner.phone }}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+</div>

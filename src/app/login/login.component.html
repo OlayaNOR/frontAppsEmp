@@ -1,0 +1,25 @@
+<div class="login-container">
+  <img src="assets/imgs/logopc.png" alt="PetClinic Logo" class="splash-logo" />
+  <h2>Login</h2>
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+    <input
+      type="text"
+      placeholder="id"
+      name="id"
+      [(ngModel)]="id"
+      required
+    />
+
+    <input
+      type="password"
+      placeholder="Password"
+      name="password"
+      [(ngModel)]="password"
+      required
+    />
+
+    <button type="submit" (click)="onSubmit()">Login</button>
+    <p class="splash-link" (click)="signIn()">Don't have an account? Click here!</p>
+  </form>
+
+</div>

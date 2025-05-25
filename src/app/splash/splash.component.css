@@ -1,0 +1,34 @@
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+  font-family: 'Trebuchet MS';
+}
+
+.splash-logo {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.splash-title {
+  font-size: 4rem;
+  color: #377c2a;
+  margin: 0;
+}
+
+.splash-link {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #377c2a;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.splash-link:hover {
+  color: #4e933f;
+  cursor: pointer;
+}
