@@ -19,7 +19,6 @@ export class LoginComponent {
   onSubmit(): void {
     this.authService.login(Number.parseInt(this.id), this.password).subscribe({
       next: (response) => {
-        // Suponiendo que response tiene una propiedad "id"
         this.router.navigate(['/profile', response.id]);
       },
       error: (error) => {
